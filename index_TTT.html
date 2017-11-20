@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tic-Tac-Toe</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+  <!--Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
+
+  <!-- Local CSS file-->
+  <link rel="stylesheet" href="CSS_TTT.css">
+
+</head>
+<body>
+  <div id="X-or-O-Select">Would you like to play as X or O?</div>
+  <div id="X-And-O-Button-Container">
+  <span id="xBtn" onclick="pickX()">X</span>
+  <span id="oBtn" onclick="pickO()">O</span>
+  </div>
+  <div id="table">
+    <div id="tableRow1">
+      <div id="tableCell1" onclick="placeLetter1()">
+        <span id="text1x">X</span>
+        <span id="text1o">O</span>
+      </div>
+      <div onclick="placeLetter2()" id="tableCell2">
+        <span id="text2x">X</span>
+        <span id="text2o">O</span>
+      </div>
+      <div onclick="placeLetter3()" id="tableCell3">
+        <span id="text3x">X</span>
+        <span id="text3o">O</span>
+      </div>
+    </div> <!--end tableRow1-->
+    <div id="tableRow2">
+      <div onclick="placeLetter4()" id="tableCell4">
+        <span id="text4x">X</span>
+        <span id="text4o">O</span>
+      </div>
+      <div onclick="placeLetter5()" id="tableCell5">
+        <span id="text5x">X</span>
+        <span id="text5o">O</span>
+      </div>
+      <div onclick="placeLetter6()" id="tableCell6">
+        <span id="text6x">X</span>
+        <span id="text6o">O</span>
+      </div>
+    </div> <!--end tableRow2-->
+    <div id="tableRow3">
+      <div onclick="placeLetter7()" id="tableCell7">
+        <span id="text7x">X</span>
+        <span id="text7o">O</span>
+      </div>
+      <div onclick="placeLetter8()" id="tableCell8">
+        <span id="text8x">X</span>
+        <span id="text8o">O</span>
+      </div>
+      <div onclick="placeLetter9()" id="tableCell9">
+        <span id="text9x">X</span>
+        <span id="text9o">O</span>
+      </div>
+    </div> <!--end tableRow3-->
+  </div> <!--end table-->
+  <div id="winStatement">
+    <p id="winner"></p>
+    <span id="playAgain" onclick="playAgain()">Play Again!</span>
+  </div> <!--end winStatement-->
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <!--Local JavaScript file-->
+  <script src="JS_TTT.js"></script>
+
+</body>
+</html>

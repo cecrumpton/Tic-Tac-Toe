@@ -1,0 +1,104 @@
+body {
+  margin: 50px;
+  background-color: #98C9A3;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#X-or-O-Select {
+  display: block;
+  font-size: 32px;
+  margin: 10px;
+}
+
+#X-And-O-Button-Container {
+  display: block;
+  font-size: 28px;
+}
+
+#xBtn, #oBtn, #playAgain{
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: dashed;
+  border-color: #98C9A3;
+}
+
+#xBtn, #oBtn {
+  font-family: 'Permanent Marker', cursive;
+}
+#xBtn:hover {
+  color: #5B1606;
+  cursor: pointer;
+  border-color: #6F1A07;
+  border-radius: 100%;
+}
+
+#oBtn:hover {
+  color: #5B1606;
+  cursor: pointer;
+  border-color: #6F1A07;
+  border-radius: 100%;
+}
+
+#table {
+  display: none;
+  margin: auto;
+  border-style: solid;
+  border-color: #fff;
+}
+
+#tableRow1, #tableRow2, #tableRow3 {
+  display: table-row;
+}
+
+#tableCell1, #tableCell2, #tableCell3, #tableCell4, #tableCell5, #tableCell6, #tableCell7, #tableCell8, #tableCell9 {
+  display: table-cell;
+  background-color: #F6C5AF;
+  border-style: solid;
+  border-color: #fff;
+  margin: 10px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+#text1x, #text1o, #text2x, #text2o, #text3x, #text3o, #text4x, #text4o, #text5x, #text5o, #text6x, #text6o, #text7x, #text7o, #text8x, #text8o, #text9x, #text9o {
+  display: none;
+
+  position: absolute;
+  top: 10%;
+  left: 30%;
+
+  font-size: 50px;
+  color: #6F1A07;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+#winStatement {
+  text-align: center;
+  font-size: 24px;
+  display: none;
+}
+
+#winner {
+  margin: 10px;
+  font-size: 28px;
+}
+
+#playAgain {
+  text-align: center;
+  font-size: 32px;
+  display: none;
+  border: dashed;
+  border-color: #98C9A3;
+  margin: 10px;
+}
+
+#playAgain:hover {
+  color: #5B1606;
+  cursor: pointer;
+  border-color: #6F1A07;
+  border-radius: 100%;
+}
